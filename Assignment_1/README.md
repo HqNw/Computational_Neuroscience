@@ -17,7 +17,7 @@ activation function.
 ## Usage
 ```bash
 git clone --depth=1 --filter=blob:none --sparse https://github.com/HqNw/Computational_Neuroscience.git -o Assignment_1
-cd Computational_Neuroscience
+cd Assignment_1
 git sparse-checkout set --no-cone Assignment_1
 ```
 
