@@ -21,6 +21,6 @@ cd Assignment_1
 git sparse-checkout set --no-cone Assignment_1
 ```
 
-```python
+```bash
 python model.py
 ```
