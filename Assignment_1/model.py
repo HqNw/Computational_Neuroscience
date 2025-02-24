@@ -56,16 +56,27 @@ def compute_error(results: dict) -> float:
   #@NOTE: Mean squared error
   error_o1 = 0.5 * (target_o1 - results['o1_output']) ** 2
   error_o2 = 0.5 * (target_o2 - results['o2_output']) ** 2
-  return error_o1 + error_o2
+  return error_o1, error_o2
 
 
 # Print results
 results = forward_pass(network)
-print(f"Output o1: {results['o1_output']}")
-print(f"Output o2: {results['o2_output']}")
+print(f"{"":=^50}")
+print("Forward Pass Results:")
+print(f"{"":=^50}")
+print(f"  Hidden Layer Outputs: h1 = {results['h1_output']:.4f}, h2 = {results['h2_output']:.4f}")
+print(f"  Output Layer Inputs: o1 = {results['o1_input']:.4f}, o2 = {results['o2_input']:.4f}")
+print(f"  Output Layer Outputs: o1 = {results['o1_output']:.4f}, o2 = {results['o2_output']:.4f}")
 
-err = compute_error(results)
-print(f"Error: {err}")
+error_o1, error_o2 = compute_error(results)
+print(f"{"":=^50}")
+print("Errors:")
+print(f"{"":=^50}")
+print(f"  Error for o1: {error_o1:.4f}")
+print(f"  Error for o2: {error_o2:.4f}")
+
+print(f"\nTotal Error: {error_o1 + error_o2:.4f}")
+print(f"{"":=^50}")
 
 
 #@TODO: Will implement in the future
