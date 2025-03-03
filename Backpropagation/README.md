@@ -2,7 +2,7 @@
 
 > **Note:** There are two implementations: 
 >> - one with complex abstractions (`model.py`).
->> - one with almost no abstractions (`model_simplified`).
+>> - one with almost no abstractions (`model_simplified.py`).
 
 
 ## Overview
