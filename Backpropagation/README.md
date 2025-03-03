@@ -1,5 +1,10 @@
 # AI323 Computational Neuroscience -  Backpropagation (Assignment 2)
 
+> **Note:** There are two implementations: 
+>> - one with complex abstractions (`model.py`).
+>> - one with almost no abstractions (`model_simplified`).
+
+
 ## Overview
 Implementation of basic neural models and analysis tools for computational neuroscience.
 
@@ -7,6 +12,7 @@ Implementation of basic neural models and analysis tools for computational neuro
 Exercise
 - [x] Implementation of Backpropagation Algorithm
 ```
+
 
 ---
 
